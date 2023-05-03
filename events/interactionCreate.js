@@ -22,7 +22,7 @@ module.exports = {
           if(now < expiration) {
             const timeleft = Math.round((expiration - now) / 1000)
             const embeduyarı = new EmbedBuilder()
-              .setColor(Renk.Red)
+              .setColor("Red")
               .setAuthor({name: interaction.user.tag, iconURL: interaction.user.avatarURL()})
               .setTitle("Yavaşla")
               .setDescription(`Bu komutu tekrar kullanabilmek için **${timeleft} saniye** beklemelisin.`)
