@@ -1,8 +1,6 @@
 const { Discord, EmbedBuilder, ChannelType, ButtonBuilder, ActionRowBuilder, ButtonStyle, ModalBuilder, TextInputStyle, TextInputBuilder, InteractionType, PermissionsBitField, StringSelectMenuBuilder, SlashCommandBuilder, Collection, ContextMenuCommandBuilder } = require ("discord.js")
 const icooldown = new Collection()
 const { sahipid } = require("../ayarlar.json")
-const Emoji = require("../Bot/Emojiler.json")
-const Renk = require("../Bot/Renkler.json")
 
 module.exports = {
     name: 'interactionCreate',
