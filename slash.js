@@ -10,10 +10,6 @@ const eventsPath = path.join(__dirname, "./events")
 const eventFiles = fs.readdirSync(eventsPath).filter((file) => file.endsWith(".js"))
 const { botid, token } = require('./ayarlar.json')
 require("advanced-logs")
-console.setConfig({
-  background: false,
-  timestamp: false
-})
 
 module.exports = (client) => {
   client.commands = new Collection()
