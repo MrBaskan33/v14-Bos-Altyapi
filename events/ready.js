@@ -1,18 +1,23 @@
-const { ActivityType, EmbedBuilder, ButtonBuilder, ActionRowBuilder, ButtonStyle } = require("discord.js")
-require('advanced-logs')
+const Discord = require("discord.js")
+const settings = require("../settings.json")
 
 module.exports = {
   name: 'ready',
-  execute(client) {
-    console.success(` `, ` ${client.user.username} aktif.`)
-    client.user.setPresence({
-      activities: [
-        {
-          name: `Oyun`, 
-          type: ActivityType.Playing
-        }
-      ]
-    })
-    client.user.setStatus(`idle`)
+  async execute(client) {
+    
+    setInterval(function () {
+      client.user.setPresence({
+        activities: [
+          {
+            name: `Sunucuyu`, 
+            type: Discord.ActivityType.Watching
+          }
+        ],
+        "status": "idle"
+      })
+     }, 10000)
+  
+    console.log(`[${client.user.tag}] active.`)
+    
   }
 }
