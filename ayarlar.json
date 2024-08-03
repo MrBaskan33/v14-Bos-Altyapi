@@ -1,5 +1,5 @@
 {
-  "botid": "",
-  "sahipid": "",
-  "token": ""
+  "owners": ["873182701061021696"],
+  "bot": "botId",
+  "token": "token"
 }
