@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "discord.js": "^14.14.1",
-    "wio.db": "^4.0.22"
+    "wio.db": "^4.0.22",
+    "anonymousdb": "^0.1.0",
+    "topgg-checker": "^0.0.3"
   },
   "engines": {
     "node": "16.x"
